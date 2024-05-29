@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Nuevo documento</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="STYLESHEET" type="text/css" href="estilos.css">
+</head>
+
+<body> 
+    <form action="envio.html" method="get">
+	<fieldset style="background-color:lightblue;width:50%"> <legend>Datos personales</legend>
+	    <p> <label for="nombre"> Dime tu nombre</label><input type="text" name="minombre" placeholder="Escribe tu nombre"/></p>
+		<p> <label for="apellido"> Dime tu apellido </label><input type="text" name="miapellido" size="35px"/></p>
+		<p> <label for="contrseña">Dime tu contraseña </label><input type="password" name="micontraseña"/></p>
+		<p>  <label for="nombre"> Dime tu DNI </label> <input type="text" name="midni" pattern="[0-9]{8}[A-Z]"></p>
+		
+		<p> 
+		    Dime tu sexo: <br/>
+			<input type="radio" name="sexo" value="H"/> Hombre <br/>
+			<input type="radio" name="sexo" value="M"/> Mujer <br/>
+		</p>
+		<p> 
+		    Dime tu estado civil: <br/>
+			<input type="radio" name="miestado" value="cas" checked="checked"/> Casado <br/>
+			<input type="radio" name="miestado" value="sol"/> Soltero <br/>
+			<input type="radio" name="miestado" value="div"/> Divorciado <br/>
+		</p>
+		<p>
+		    Dime tus hobbie: <br/>
+			<input type="checkbox" name="mishobbies" value="pas"/> pasear <br/>
+			<input type="checkbox" name="mishobbies" value="via"/> viajar <br/>
+			<input type="checkbox" name="mishobbies" value="cine"/> cine <br/>
+			<input type="checkbox" name="mishobbies" value="otros"/> otros <br/>
+		</p>
+	</fieldset> <br/>
+	<fieldset style="background-color:lightgreen; width:50%"> <legend>Datos extra</legend>
+		<p>
+		    Dime tu provincia de nacimiento:
+		    <select name="miprovincia" multiple="multiple" size="7">
+                <optgroup label="Cantabria">
+					<option value="s">Santander</option>
+				</optgroup>
+				<optgroup label="Castilla y León">
+					<option value="av">Ávila</option>
+					<option value="bu">Burgos</option>
+					<option value="l">León</option>
+					<option value="p">Palencia</option>
+					<option value="sg">Segovia</option>
+					<option value="so">Soria</option>
+					<option value="sa">Salamanza</option>
+					<option value="va">Valladolid</option>
+					<option value="za">Zamora</option>
+				</optgroup>
+			</select>
+		</p>
+		<p>
+		    Elija el archivo
+			<input type="file" name="archivo" />
+		    <input type="submit" value="enviar"/><br />
+		</p>
+		<p>
+			Escribe un texto descriptivo: <br />
+			<textarea rows="10" cols="40" name="texto"></textarea><br />
+			<input type="submit" value="enviar"/><br />
+		</p>
+	</fieldset>
+	    <p> 
+		    <input type="submit" value="enviar formulario"/>
+		    <input type="reset" value="reiniciar formulario"/> 
+	    </p>
+	</form>
+	
+	<marquee> Gracias </marquee>
+
+</body>
+</html>
+
+
+
